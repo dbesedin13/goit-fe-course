@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+background-color: gray;
+padding: 10px 0;
+}
+
+.content {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 42px;
+}
+
+.navigation{
+
+}
+
+.menu{
+text-align: right;
+}
+
+.menu_item{
+display: inline-block;
+margin-right: 20px;
+}
+
+.menu_item:last-child{
+    margin-right: 0;
+}
+
+.menu_link{
+padding: 5px 15px;
+background-color: blue;
+color: white;
+text-decoration:none;
+}
+
+.menu_link:hover{
+    color: green;
+}
+
+.information-block{
+    text-align: center;
+    background-color: #cf1414;
+    padding: 20px;
+}
+
+.logo{
+    max-width: 400px;
+}
+
+.number{
+    text-decoration: line-through
+}
+
+.text{
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.parallax{
+    background-image: url("../images/nature.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
