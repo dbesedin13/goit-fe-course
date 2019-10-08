@@ -17,8 +17,10 @@
   }
 
   .menu {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
+    align-items: center;
   }
 
   .menu li:hover a {
@@ -27,9 +29,8 @@
 
   .menu_item {
     display: inline-block;
-    margin: auto;
-    margin-left: 130px;
-  }
+    margin: auto auto auto 130px;
+      }
 
   .menu_link {
     text-decoration: none;
@@ -89,9 +90,8 @@
     border: 1px solid #555555;
     display: table;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 70px;
     padding: 25px 36px;
-    margin-bottom: 70px;
   }
 
   .knopka {
@@ -107,6 +107,7 @@
     color: #b4ad9e;
     font-family: roboto, arial, sans-serif;
     margin-bottom: 25px;
+    text-transform: uppercase;
   
   }
 
