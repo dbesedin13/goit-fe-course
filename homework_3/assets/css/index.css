@@ -9,7 +9,7 @@
   }
 
   .navigation {
-    display: table;
+    display: inline-block;
     text-align: center;
     text-decoration: none;
     margin-top: 75px;
@@ -21,8 +21,10 @@
     justify-content: space-between;
     text-align: center;
     align-items: center;
+    text-transform: uppercase;
+    font-family: 'Maven Pro', sans-serif;
   }
-
+  
   .menu li:hover a {
     color: #38a4dd;
   }
@@ -87,31 +89,31 @@
   .button {
     background-color: white;
     color: black;
-    border: 1px solid #555555;
-    display: table;
+    display: block;
     text-align: center;
-    margin: 0 auto 70px;
-    padding: 25px 36px;
-  }
+    margin-bottom: 60px;
+    }
 
-  .knopka {
+  .btn {
     text-decoration: none;
     padding: auto;
     font-size: 20px;
+    font-family: 'Maven Pro', sans-serif;
+    margin 0 auto;
   }
 
-  .h5 {
+  .text_nametitle {
     display: block;
     text-align: left;
     font-size: 14px;
     color: #b4ad9e;
-    font-family: roboto, arial, sans-serif;
+    font-family: 'Maven Pro', sans-serif;
     margin-bottom: 25px;
     text-transform: uppercase;
   
   }
 
-  .h2 {
+  .text_names {
     display: block;
     text-align: center;
     font-size: 30px;
@@ -120,7 +122,7 @@
     margin-bottom: 40px;
   }
 
-  .p {
+   .text_discription {
     display: block;
     text-align: justify;
     font-size: 14px;
