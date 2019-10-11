@@ -23,6 +23,7 @@
     align-items: center;
     text-transform: uppercase;
     font-family: 'Maven Pro', sans-serif;
+    font-size: 14px;
   }
   
   .menu li:hover a {
