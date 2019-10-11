@@ -7,6 +7,7 @@
     display: block;
     max-width: 901px;
     margin: 0 auto;
+    text-align: center;
   }
 
   .navigation {
@@ -100,7 +101,7 @@
     padding: auto;
     font-size: 20px;
     font-family: 'Maven Pro', sans-serif;
-    margin 0 auto;
+    margin: 0 auto;
   }
 
   .text_nametitle {
@@ -111,7 +112,6 @@
     font-family: 'Maven Pro', sans-serif;
     margin-bottom: 25px;
     text-transform: uppercase;
-  
   }
 
   .text_names {
