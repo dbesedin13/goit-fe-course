@@ -184,10 +184,11 @@ body {
     margin-bottom: 30px;
 }
 
-.news__photo{
+.news__photo {
     width: 350px;
     height: 265px;
 }
+
 .news__text {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
