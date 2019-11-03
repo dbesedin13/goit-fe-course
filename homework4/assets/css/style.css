@@ -19,10 +19,6 @@ body {
     clear: both;
 }
 
-.navigation-item_blok {
-    padding-right: 37px;
-}
-
 .navigation {
     float: right;
     padding-top: 20px;
@@ -92,7 +88,7 @@ body {
 }
 
 .products {
-    float: left;
+    /* float: left; */
     text-transform: uppercase;
 }
 
@@ -145,6 +141,10 @@ body {
 }
 
 .products__title:hover {
+    background-color: #1abc9c;
+}
+
+.products__item:hover {
     background-color: #1abc9c;
 }
 
