@@ -1,0 +1,311 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    font-weight: 400;
+    list-style-type: none;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: "Alex";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/alex-brush-v11-latin/alex-brush-v11-latin-regular.woff");
+    src: url("../fonts/alex-brush-v11-latin/alex-brush-v11-latin-regular.woff2");
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff2") format(woff2);
+    src: url("../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff") format(woff);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff");
+    src: url("../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff");
+    src: url("../fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff2");
+}
+
+@font-face {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/archivo-narrow-v11-latin/archivo-narrow-v11-latin-italic.woff2");
+    src: url("../fonts/archivo-narrow-v11-latin/archivo-narrow-v11-latin-italic.woff");
+}
+
+/* HEADER */
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.page-header {
+    min-height: 65px;
+    margin-bottom: 130px;
+}
+
+.page-nav {
+    justify-content: space-between;
+    display: flex;
+    padding: 28px 0;
+}
+
+.logo {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Alex";
+    font-size: 26px;
+    color: #fed136;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 485px;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation a {
+    font-family: "Montserrat";
+    font-weight: 400;
+    line-height: 41px;
+    display: block;
+    font-size: 14px;
+    color: #313131;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+}
+
+.site-navigation a:hover, .site-navigation a:focus {
+    color: #fed136;
+}
+
+/* MAIN  SERVICES */
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.service-list-item {
+    flex-basis: 280px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+/* ICONS */
+
+.service-list-item::before {
+    display: block;
+    content: "";
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #fed136;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 28px;
+}
+
+.service-list-item:nth-child(1)::before {
+    background-image: url("../img/Icon-Basket.png");
+}
+
+.service-list-item:nth-child(2)::before {
+    background-image: url("../img/Icon-Laptop.png");
+}
+
+.service-list-item:nth-child(3)::before {
+    background-image: url("../img/Icon-Locked.png");
+}
+
+.service-list-title {
+    padding-bottom: 21px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #222222;
+    font-family: "Montserrat";
+    font-weight: 700;
+    padding-bottom: 23px;
+}
+
+.service-list-description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+    font-family: "Roboto Slab";
+    text-align: center;
+}
+
+.proin {
+    font-size: 16px;
+    color: #777777;
+    font-family: "Allan";
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+/* CONTACTS */
+
+.contact {
+    background: url("../img/Map\ Image.png");
+    background-color: #222222;
+    min-height: 675px;
+    background-repeat: no-repeat, repeat;
+    background-position: right;
+}
+
+.contact-title {
+    color: white;
+    padding-top: 110px;
+    padding-bottom: 26px;
+}
+
+/* FORMS */
+
+.contact-form input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-width: 457px;
+}
+
+.contact-form textarea {
+    padding-top: 20px;
+    padding-bottom: 180px;
+    min-width: 457px;
+}
+
+.contact-form input::placeholder {
+    padding-left: 21px;
+    font-size: 14px;
+    color: #cdcdcd;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact-form textarea::placeholder {
+    padding-left: 21px;
+    font-size: 14px;
+    color: #cdcdcd;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.flex-container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+input {
+    margin-bottom: 28px;
+}
+
+.yourmessage {
+    display: flex;
+}
+
+textarea {
+    display: flex;
+    margin-bottom: 28px;
+}
+
+.contact-form input[type="Your Name"]:valid, .contact-form input[type="Your E-mail"]:valid, .contact-form textarea[type="Your Message"]:valid {
+    border-color: rgb(0, 256, 0);
+}
+
+.contact-form input[type="Your Name"]:invalid, .contact-form input[type="Your E-mail"]:invalid, .contact-form textarea[type="Your Message"]:invalid {
+    border-color:rgb(256, 0, 0);
+}
+
+input:required:focus:valid {
+    outline: 2px solid rgb(0, 256, 0);
+}
+
+input:required:focus:invalid {
+    outline: 2px solid rgb(256, 0, 0);
+}
+
+textarea:required:focus:valid {
+    outline: 2px solid rgb(0, 256, 0);
+}
+
+textarea:required:focus:invalid {
+    outline: 2px solid rgb(256, 0, 0);
+}
+
+textarea {
+    resize: none;
+}
+
+.message {
+    border: 1px solid;
+    border-radius: 1px;
+    margin: 0;
+    padding: 25px 48px;
+    background-color: #fed136;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    border-color: #fed136;
+}
+
+.load {
+    text-align: center;
+}
