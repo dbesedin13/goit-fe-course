@@ -89,6 +89,7 @@ body {
     font-family: "Alex";
     font-size: 26px;
     color: #fed136;
+    padding-top: 13px;
 }
 
 .site-navigation {
@@ -102,7 +103,7 @@ body {
 
 .site-navigation a {
     font-family: "Montserrat";
-    font-weight: 400;
+    font-weight: 700;
     line-height: 41px;
     display: block;
     font-size: 14px;
