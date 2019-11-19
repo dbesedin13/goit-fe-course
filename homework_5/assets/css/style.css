@@ -2,9 +2,7 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inhereit;
   padding: 0;
   margin: 0;
@@ -43,18 +41,31 @@ body {
   overflow: hidden;
 }
 
-.Mart {
+.mart {
   display: inline-block;
   vertical-align: middle;
+  text-transform: uppercase;
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 32px;
+  color: #555252;
+  letter-spacing: -0.02em;
+  text-decoration: none;
 }
 
-.Mart:hover,
-.Mart:focus {
+.mart:hover, .Mart:focus {
   background: none;
 }
 
+.Mart::first-letter {
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  color: #1abc9c;
+}
+
 .site-navigation {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   float: right;
   list-style: none;
@@ -73,10 +84,11 @@ body {
 }
 
 .site-navigation a {
-  font-family: 'Playfair Display', serif;
-  color: #515151;
+  font-family: 'Open Sans', sans-serif;
+  color: #0f0101;
   text-decoration: none;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .site-navigation a:hover {
@@ -88,13 +100,12 @@ body {
 }
 
 .slider_wrapper {
-  background-image: url(/assets/image/slider.jpg);
+  background-image: url(./assets/image/slider.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
   width: 100%;
   filter: brightness(85%);
-
 }
 
 .slider {
@@ -118,36 +129,36 @@ body {
 }
 
 .left {
-    left: 0;
-
+  left: 0;
 }
+
 .right {
-    right: 0;
+  right: 0;
 }
 
-.right::before,
-.left::before {
+.right::before, .left::before {
   content: "";
   --s: 28px;
   --bd: 4px solid #fff;
   width: var(--s);
   height: var(--s);
-  border-left:  var(--bd);
-  border-top:  var(--bd);
+  border-left: var(--bd);
+  border-top: var(--bd);
   position: absolute;
   left: 50%;
   top: 50%;
   z-index: 1;
 }
+
 .right::before {
   transform: translate(-60%, -50%) rotate(135deg);
 }
+
 .left::before {
-   transform: translate(-20%, -50%) rotate(-45deg);
+  transform: translate(-20%, -50%) rotate(-45deg);
 }
 
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: #4ec6ab;
   opacity: 1;
   cursor: pointer;
@@ -156,7 +167,7 @@ body {
 .slides {
   margin: 0;
   padding: 0;
-  position: relative; 
+  position: relative;
 }
 
 .slides-tours {
@@ -185,7 +196,7 @@ body {
   left: 190px;
   font-size: 24px;
   color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Roboto", serif;
   text-transform: uppercase;
 }
 
@@ -196,7 +207,7 @@ body {
   font-size: 48px;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Roboto", serif;
   color: #555252;
   text-align: center;
   line-height: var(--h4);
@@ -215,6 +226,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 30px;
+}
+
+.new-collection-wrapper {
+ background-color: #e9f0fd; 
 }
 
 .new-collection {
@@ -244,13 +259,11 @@ body {
   opacity: 1;
 }
 
-
 .item {
   position: absolute;
   width: 50px;
   height: 50px;
   border: 1px solid floralwhite;
- 
 }
 
 .heart {
@@ -294,13 +307,11 @@ body {
 
 .overlay:hover {
   background-color: #1abc9c;
- 
 }
 
 .link {
   text-decoration: none;
   color: #fff;
-  
 }
 
 .product-list:hover .item-market {
@@ -329,7 +340,7 @@ body {
   float: left;
   text-indent: 1rem;
   font-size: 18px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Roboto", serif;
   height: 100%;
   --h: 40px;
   line-height: var(--h);
@@ -343,8 +354,8 @@ body {
   text-align: center;
   font-size: 18px;
   line-height: 40px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: rgba(255,255,255, 0.3);
+  font-family: "roboto", sans-serif;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .product-list:hover .product_price {
@@ -356,7 +367,6 @@ body {
   width: 100%;
   height: 90px;
   background-color: #323232;
-  
 }
 
 .container-footer {
