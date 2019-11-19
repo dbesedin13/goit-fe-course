@@ -140,11 +140,7 @@ body {
     padding-right: 12px;
 }
 
-.products__title:hover {
-    background-color: #1abc9c;
-}
-
-.products__item:hover {
+.products__title:hover, .products__photo:focus {
     background-color: #1abc9c;
 }
 
