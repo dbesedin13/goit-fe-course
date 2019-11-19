@@ -58,7 +58,7 @@ body {
   background: none;
 }
 
-.Mart::first-letter {
+.mart::first-letter {
   font-family: 'Roboto', sans-serif;
   font-weight:bold;
   color: #1abc9c;
@@ -100,7 +100,7 @@ body {
 }
 
 .slider_wrapper {
-  background-image: url(./assets/image/slider.jpg);
+  background-image: url(../assets/image/slider.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
