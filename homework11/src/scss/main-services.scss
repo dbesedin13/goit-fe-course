@@ -1,0 +1,64 @@
+@import 'variables';
+
+.main{
+    text-align: center;
+    width: 76rem;
+    margin: 0 auto;
+    padding-bottom: 4.9375rem;
+    &-services{
+        padding-bottom: 5.5rem;
+        min-height: 15.1rem;
+        &_collection{
+            @extend %collection;
+        }
+        &_subtitle{
+            @extend %subtitle;
+            margin-bottom: 1rem;
+        }
+        &_title{
+            @extend %title;
+            margin-bottom: 6.7rem;
+            &::after{
+                @extend %pseudo;
+            }
+        }
+    }
+}   
+.services_collection_card{
+    position: relative;
+    text-align: left;
+    -ms-flex-preferred-size: 18.75rem;
+        flex-basis: 18.75rem;
+    padding-left: 5rem;
+
+    &_title{
+        vertical-align: top;
+        margin-bottom: 0.875rem;
+        @include font_style($mont, 0.9em, 400, 1em, uppercase, sub-black);
+    }
+    &_descr{
+        @include font_style($roboto, 1em, 400, 1.4em, none, deskr-gray);
+    }
+    &::before{
+        @extend %icon-service;
+    }
+    &:first-child::before{
+        content: url('../img/alarm.png');
+    }
+    &:nth-child(2)::before{
+        content: url('../img/line-graph.png');
+    }
+    &:nth-child(3)::before{
+        content: url('../img/computer.png');
+    }
+    &:nth-child(4)::before{
+        content: url('../img/book.png');
+    }
+    &:nth-child(5)::before{
+        content: url('../img/home.png');
+    }
+    &:last-child::before{
+        content: url('../img/digital.png');
+    }    
+}
+
